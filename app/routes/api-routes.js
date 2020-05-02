@@ -7,7 +7,7 @@ module.exports = function(app) {
   app.get("/api/:id?", function(req, res) {
     if (req.params.characters) {
       Employee.findAll({
-        where: {Employee_ID: req.params.id}
+        where: {Employee_ID: req.params.Employee_ID}
       })
         .then(data => {
           console.log('data-searched:', data[0]);   

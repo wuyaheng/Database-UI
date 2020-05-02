@@ -1,7 +1,7 @@
 // when user clicks add-btn
 $("#add-btn").on("click", function(event) {
   event.preventDefault();
-
+  // var id = "id" + Math.random().toString(16).slice(5);
   // make a newEmployee obj
   var newEmployee = {
     Employee_ID: $("#employeeID").val().trim(),
