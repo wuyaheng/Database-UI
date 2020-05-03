@@ -12,7 +12,7 @@ module.exports = function(app) {
   });
 
 
-  app.get("/emplyee/add", function(req, res) {
+  app.get("/employee/add", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/employee/add.html"));
   });
 
