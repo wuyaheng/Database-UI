@@ -1,29 +1,68 @@
-// Dependencies
-// =============================================================
 var path = require("path");
 
 
-// Routes
-// =============================================================
 module.exports = function(app) {
 
-  // Each of the below routes just handles the HTML page that the user gets sent to.
-
-  // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/view.html"));
+    res.sendFile(path.join(__dirname, "../public/menu.html"));
   });
 
-  // add route loads the add.html page,
-  // where users can enter new characters to the db
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
+  app.get("/employee", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/employee/view.html"));
   });
 
-  // all route loads the all.html page,
-  // where all characters in the db are displayed
-  app.get("/all", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/all.html"));
+
+  app.get("/emplyee/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/employee/add.html"));
+  });
+
+
+  app.get("/employee/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/employee/all.html"));
+  });
+
+  app.get("/client", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/client/view.html"));
+  });
+
+
+  app.get("/client/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/client/add.html"));
+  });
+
+
+  app.get("/client/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/client/all.html")); 
+  });
+
+
+  app.get("/engagement", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/engagement/view.html"));
+  });
+
+
+  app.get("/engagement/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/engagement/add.html"));
+  });
+
+
+  app.get("/engagement/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/engagement/all.html")); 
+  });
+
+
+  app.get("/service", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/service/view.html"));
+  });
+
+
+  app.get("/service/add", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/service/add.html"));
+  });
+
+
+  app.get("/service/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/service/all.html")); 
   });
 
 };

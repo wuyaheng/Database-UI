@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Table UI</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+      <a href="/employee/all" class="btn btn-danger btn-lg mt-3 mb-3">
+        <span class="fa fa-th-list pr-2"></span> All Employees</a>
+        <a href="/" class="btn btn-danger btn-lg mt-3 mb-3">
+          <span class="fa fa-home pr-2"></span>Home</a>
+        
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            Add Employee
+          </div>
+          <div class="card-body">
+            <form action="" method="POST" role="form">
+
+              <div class="form-group">
+                <label for="">Employee ID</label>
+                <input type="text" class="form-control" id="employeeID" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Date of Birth</label>
+                <input type="text" class="form-control" id="DOB" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Street</label>
+                <input type="text" class="form-control" id="street" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">City</label>
+                <input type="text" class="form-control" id="city" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">State</label>
+                <input type="text" class="form-control" id="state" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Contact</label> 
+                <input type="text" class="form-control" id="contact" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Job Title</label> 
+                <input type="text" class="form-control" id="jobTitle" placeholder="" autocomplete="off">
+              </div>
+
+            </form>
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+                <span class="fa fa-plus pr-2"></span>Add to the Employee Table</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/add.js" type="text/javascript"></script>
+
+</body>
+
+</html>

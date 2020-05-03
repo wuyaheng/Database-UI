@@ -16,7 +16,7 @@ $("#add-btn").on("click", function(event) {
   };
 
   // send an AJAX POST-request with jQuery
-  $.post("/api/new", newEmployee)
+  $.post("/api/employee/new", newEmployee)  
     // on success, run this callback
     .then(function(data) {
       // log the data we found

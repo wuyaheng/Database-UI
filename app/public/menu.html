@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Table UI</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <style>
+    .jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://cdn.glitch.com/f28949c6-6f44-4abb-a9a1-6a9e90371a91%2Fimage-2.jpeg?v=1588452603431");
+    background-size: cover;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    } 
+
+    .btn {
+    width: 180px;
+    display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container p-0 mt-5">
+    <div class="jumbotron">
+      <h1 class="text-center text-white">Company Database Main Menu</h1> 
+      <hr>
+    <div class="row d-flex justify-content-around">
+    <div class="col-md-2 m-2">
+    <a href="/employee" class="btn btn-primary btn-lg text-left">
+        <span class="fa fa-th-list pr-2"></span>Employee</a>
+    </div>
+    <div class="col-md-2 m-2">
+    <a href="/client" class="btn btn-primary btn-lg text-left">
+        <span class="fa fa-th-list pr-2"></span>Client</a>
+    </div>
+    <div class="col-md-2 m-2">
+    <a href="/service" class="btn btn-primary btn-lg text-left">
+        <span class="fa fa-th-list pr-2"></span>Service</a>
+    </div>
+    <div class="col-md-2 m-2">
+    <a href="/engagement" class="btn btn-primary btn-lg text-left">
+        <span class="fa fa-th-list pr-2"></span>Engagement</a>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="js/view.js" type="text/javascript"></script>
+
+</body>
+
+</html>

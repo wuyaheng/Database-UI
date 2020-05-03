@@ -2,7 +2,7 @@
 // It pings the server. The server then pings the database and displays all of the characters.
 
 // make a get request to our api to grab every character
-$.get("/api", function(data) {
+$.get("/api/client", function(data) {
 
   // for each character that our server sends us back
   for (var i = 0; i < data.length; i++) {
@@ -14,15 +14,13 @@ $.get("/api", function(data) {
     wellSection.attr("id", "character-well-" + i);
     // append the well to the well section
     $("#well-section").append(wellSection);
-    $("#character-well-" + i).append("<td>" + data[i].Employee_ID + "</td>");
-    $("#character-well-" + i).append("<td>" + data[i].First_Name + "</td>");
-    $("#character-well-" + i).append("<td>" + data[i].Last_Name + "</td>");
-    $("#character-well-" + i).append("<td>" + moment(data[i].DOB).format('L') + "</td>");
+    $("#character-well-" + i).append("<td>" + data[i].Client_ID + "</td>");
+    $("#character-well-" + i).append("<td>" + data[i].Client_Name + "</td>");
+    $("#character-well-" + i).append("<td>" + data[i].Client_Type + "</td>");
     $("#character-well-" + i).append("<td>" + data[i].Street + "</td>");
     $("#character-well-" + i).append("<td>" + data[i].City + "</td>");
     $("#character-well-" + i).append("<td>" + data[i].State + "</td>");
     $("#character-well-" + i).append("<td>" + data[i].Contact + "</td>");
-    $("#character-well-" + i).append("<td>" + data[i].Job_Title + "</td>");
   }
-  $("#well-section").prepend("<tr><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>Date of Birth</th><th>Street</th><th>City</th><th>State</th><th>Contact</th><th>Job Title</th></tr>");
+  $("#well-section").prepend("<tr><th>Client ID</th><th>Client Name</th><th>Client Type</th><th>Street</th><th>City</th><th>State</th><th>Contact</th></tr>");
 });
