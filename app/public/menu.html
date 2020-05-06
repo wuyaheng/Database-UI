@@ -13,46 +13,238 @@
 
 
   <style>
-    .jumbotron {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://cdn.glitch.com/f28949c6-6f44-4abb-a9a1-6a9e90371a91%2Fimage-2.jpeg?v=1588452603431");
-    background-size: cover;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    .btn-lg {
+    width: 250px;
+    display: inline-block;
     } 
 
-    .btn {
-    width: 180px;
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #fff;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0;
+    color:#fff;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
+        -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#landing {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("https://cdn.glitch.com/f28949c6-6f44-4abb-a9a1-6a9e90371a91%2Fimage-2.jpeg?v=1588452603431");
+}
+
+
+#landing-2 {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://cdn.glitch.com/f28949c6-6f44-4abb-a9a1-6a9e90371a91%2Fimg15.jpeg?v=1588729605702");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex: 0 1 60 vw;
+  margin: 0;
+}
+
+#landing-3 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex: 0 1 60 vw;
+  margin: 0; 
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
     display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+    color:#000;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+@media(min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
     }
+
+    #landing-text {
+        height: 100vh;
+    }
+}
+
+@media(min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
   </style>
 </head>
 
 <body>
 
-  <div class="container p-0 mt-5">
-    <div class="jumbotron">
-      <h1 class="text-center text-white">Company Database Main Menu</h1> 
-      <hr>
-    <div class="row d-flex justify-content-around">
-    <div class="col-md-2 m-2">
-    <a href="/employee" class="btn btn-primary btn-lg text-left">
-        <span class="fa fa-th-list pr-2"></span>Employee</a>
+  <main>
+    <!-- Landing Area -->
+    <div id="landing">
+        <div id="landing-text">
+            <div id="landing-text-inner">
+                <h1>K&P Consulting LLP</h1>
+                <h6>we are trusted advisors for accounting and tax</h6>
+                <a href="#images" class="btn" id="view-work">About Us</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-2 m-2">
-    <a href="/client" class="btn btn-primary btn-lg text-left">
-        <span class="fa fa-th-list pr-2"></span>Client</a>
+
+    <div id="images">
+        <div id="header">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="caption">
+            <p>P&K Consulting LLP is a limited liability company located in New York. It was founded by Kotekoro Traore and Phoebe Wu both graduate student at Baruch College. Our specialties and main services are Auditing and Attestation services, Bookkeeping, Taxation, Consultation and Advisory. Currently, our company has 13 employees including ourselves with different specialties in order to be more responsive to our clientele. We currently have some engagement within our existing clients list. Our location gives as the opportunity to serve clients in all 5 (five) Borough of NY as well as New Jersey. Bellow is the details of our Company database and the User Interface
+              <br><br>Our DB has 4 (four) main tables that are: Employee table, Clients table, Service table, and Engagement table.
+              <br><br>Employee table is composed of 9 (nine) attributes such as Employee ID, First Name, Last Name, DOB, Street, City, State, Contact and Job title. Each employee has his/her data recorded based on the 9 (nine) attributes; and employees are assigned to engagement through their ID. Employee table is updated more frequently whenever an employee quits, change information (address, contact etc..) or add new employee.
+              <br><br>Clients table is composed of 7 (seven) attributes such as Client ID, Client Name, Client Type, Street, City, State, and contact. Clients are identified in engagement based on their ID; the attribute Client Type is used to identify individual clients from companies. Clients table is updated more frequently to add new clients; when client change address or remove an existing client when the client terminated with us. 
+              <br><br>Service table is composed of 3 (three) attributes such as Service ID, Service Description, and Price per Hour. Engagements are based on the clients needs and the service that we offer. Therefore, each engagement has its service ID in order to make sure that we have the right employee assigned to the right engagement with the right service for the right client. Service table is updated more frequently to adjust price; add new service or remove an existing service that we no longer offer.
+              <br><br>Engagement table is based on the other three tables, but each engagement has an ID to identify itself in addition to the IDs from other tables. It has 8 (eight) attributes such as Engagement ID, Employee ID, Service ID, Start Date, End Date, Number of Hours, Clients ID and Status. 
+              <br><br>Our DB has a UI that allow users to add new employee, new service, new client and new engagement. It also allows users to view all the data from any one of our four (4) table with the ability to return to the home page by clicking on the Home button. 
+              </p>
+        </div>
+
+ 
+
+        <div id="landing-2">
+          <div id="landing-text">
+              <div id="landing-text-inner">
+                  <a href="#landing-3" class="btn" id="view-work">Database Menu</a>
+              </div>
+          </div>
+      </div>
+
+      <div id="landing-3">
+        <div id="header">
+          <h2>Database Menu</h2>
+      </div>
+        <div class="container p-0 mt-5"> 
+          <div class="row justify-content-center"> 
+         
+          <a href="/employee" class="btn btn-dark btn-lg text-left">
+              <span class="fa fa-th-list pr-2"></span>Employee</a>
+  
+          </div>
+          <div class="row justify-content-center"> 
+          <a href="/client" class="btn btn-dark btn-lg text-left">
+              <span class="fa fa-th-list pr-2"></span>Client</a>
+          </div>
+          <div class="row justify-content-center"> 
+          <a href="/service" class="btn btn-dark btn-lg text-left">
+              <span class="fa fa-th-list pr-2"></span>Service</a>
+          </div>
+          <div class="row justify-content-center"> 
+          <a href="/engagement" class="btn btn-dark btn-lg text-left">
+              <span class="fa fa-th-list pr-2"></span>Engagement</a>
+         </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
-    <div class="col-md-2 m-2">
-    <a href="/service" class="btn btn-primary btn-lg text-left">
-        <span class="fa fa-th-list pr-2"></span>Service</a>
-    </div>
-    <div class="col-md-2 m-2">
-    <a href="/engagement" class="btn btn-primary btn-lg text-left">
-        <span class="fa fa-th-list pr-2"></span>Engagement</a>
-    </div>
-    </div>
-    </div>
-  </div>
+</main>
+
+
+
+
+
+
+  <footer>
+    <h3>Get In Touch</h3>
+    <p>Email or call us to schedule an appointment</p>
+    <p>Email: <strong>kp@consulting.com</strong></p>
+    <p>Phone: <strong>(646) 897-4621</strong></p>
+</footer>
 
   <!-- Custom Script -->
   <script src="js/view.js" type="text/javascript"></script>
