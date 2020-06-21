@@ -12,8 +12,8 @@ $("#add-btn").on("click", function(event) {
     City: $("#city").val().trim(),
     State: $("#state").val().trim(),
     Contact: $("#contact").val().trim(),
-    Job_Title: $("#jobTitle").val().trim(),
-    Service_ID: $("#serviceID").val().trim()
+    Job_Title: $("#jobTitle").val().trim()
+    // Service_ID: $("#serviceID").val().trim()
   };
 
   // send an AJAX POST-request with jQuery
@@ -36,5 +36,5 @@ $("#add-btn").on("click", function(event) {
   $("#state").val("");
   $("#contact").val("");
   $("#jobTitle").val("");
-  $("#serviceID").val("");
+  // $("#serviceID").val("");
 });

@@ -33,10 +33,10 @@ function getEmployee() {
       $("#character-well-" + i).append("<td>" + data[i].State + "</td>");
       $("#character-well-" + i).append("<td>" + data[i].Contact + "</td>");
       $("#character-well-" + i).append("<td>" + data[i].Job_Title + "</td>");
-      $("#character-well-" + i).append("<td>" + data[i].Service_ID + "</td>"); 
+      // $("#character-well-" + i).append("<td>" + data[i].Service_ID + "</td>"); 
       // $("#character-well-" + i).append("<td><button type='button' class='btn btn-outline-dark' id='deleteBtn'>Delete</button></td>");
     }
-    $("#well-section").prepend("<tr><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>Date of Birth</th><th>Street</th><th>City</th><th>State</th><th>Contact</th><th>Job Title</th><th>Service ID</th></tr>");
+    $("#well-section").prepend("<tr><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>Date of Birth</th><th>Street</th><th>City</th><th>State</th><th>Contact</th><th>Job Title</th></tr>");
   });
 };
 
