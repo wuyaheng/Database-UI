@@ -43,7 +43,7 @@ function getEmployee() {
 $('#myEmployeeInput').on('keyup', function (e) {
   let searchValue = e.target.value;
   console.log(searchValue);
-  var ul, li, value_1, value_2, value_3, value_4, value_5, value_6, value_7, value_8, value_9, value_10, i, txtValue_1, txtValue_2, txtValue_3, txtValue_4, txtValue_5, txtValue_6, txtValue_7, txtValue_8, txtValue_9, txtValue_10; 
+  var ul, li, value_1, value_2, value_3, value_4, value_5, value_6, value_7, value_8, value_9, i, txtValue_1, txtValue_2, txtValue_3, txtValue_4, txtValue_5, txtValue_6, txtValue_7, txtValue_8, txtValue_9; 
   ul = document.getElementById("well-section");
   li = ul.getElementsByClassName("well"); 
   for (i = 0; i < li.length; i++) {
@@ -56,7 +56,7 @@ $('#myEmployeeInput').on('keyup', function (e) {
     value_7 = li[i].getElementsByTagName("td")[6]; 
     value_8 = li[i].getElementsByTagName("td")[7]; 
     value_9 = li[i].getElementsByTagName("td")[8]; 
-    value_10 = li[i].getElementsByTagName("td")[9]; 
+    // value_10 = li[i].getElementsByTagName("td")[9]; 
     txtValue_1 = value_1.textContent || value_1.innerText;
     txtValue_2 = value_2.textContent || value_2.innerText;
     txtValue_3 = value_3.textContent || value_3.innerText;
@@ -66,8 +66,8 @@ $('#myEmployeeInput').on('keyup', function (e) {
     txtValue_7 = value_7.textContent || value_7.innerText;
     txtValue_8 = value_8.textContent || value_8.innerText;
     txtValue_9 = value_9.textContent || value_9.innerText;
-    txtValue_10 = value_10.textContent || value_10.innerText;
-    if (txtValue_1.indexOf(searchValue) > -1 || txtValue_2.indexOf(searchValue) > -1 || txtValue_3.indexOf(searchValue) > -1 || txtValue_4.indexOf(searchValue) > -1 || txtValue_5.indexOf(searchValue) > -1 || txtValue_6.indexOf(searchValue) > -1 || txtValue_7.indexOf(searchValue) > -1 || txtValue_8.indexOf(searchValue) > -1 || txtValue_9.indexOf(searchValue) > -1 || txtValue_10.indexOf(searchValue) > -1) {
+    // txtValue_10 = value_10.textContent || value_10.innerText;
+    if (txtValue_1.indexOf(searchValue) > -1 || txtValue_2.indexOf(searchValue) > -1 || txtValue_3.indexOf(searchValue) > -1 || txtValue_4.indexOf(searchValue) > -1 || txtValue_5.indexOf(searchValue) > -1 || txtValue_6.indexOf(searchValue) > -1 || txtValue_7.indexOf(searchValue) > -1 || txtValue_8.indexOf(searchValue) > -1 || txtValue_9.indexOf(searchValue) > -1) {
       document.getElementsByClassName("well")[i].style.display = "";
     } else {
       document.getElementsByClassName("well")[i].style.display = "none"; 
