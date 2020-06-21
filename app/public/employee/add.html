@@ -16,27 +16,28 @@
     width: 260px;
     display: inline-block;
     }
-    .btn-dark:focus {
+
+    input:focus {
       outline: none !important;
       box-shadow: none !important;
     }
 
-    input:focus {
+    .btn-dark:focus {
       outline: none !important;
-      box-shadow: none !important;     
+      box-shadow: none !important;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container mt-4">
       <a href="/employee/all" class="btn btn-dark btn-lg m-1 text-left">
         <span class="fa fa-th-list pr-2"></span> All Employees</a>
         <a href="/#landing-3" class="btn btn-dark btn-lg m-1 text-left"> 
           <span class="fa fa-home pr-2"></span>Home</a>
         
-    <div class="row">
+    <div class="row mt-4">
 
       <div class="col-lg-12">
 
@@ -90,6 +91,11 @@
               <div class="form-group">
                 <label for="">Job Title</label> 
                 <input type="text" class="form-control" id="jobTitle" placeholder="" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="">Service ID</label> 
+                <input type="text" class="form-control" id="serviceID" placeholder="" autocomplete="off">
               </div>
 
             </form>

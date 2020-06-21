@@ -26,21 +26,31 @@
     display: inline-block;
     }
 
+  #deleteBtn {
+    width: 70px;
+  }
+
+  #deleteBtn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  input:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
     .btn-dark:focus {
       outline: none !important;
       box-shadow: none !important;
     }
 
-    input:focus {
-      outline: none !important;
-      box-shadow: none !important;     
-    }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="container mt-4">
    
       <a href="/client/add" class="btn btn-dark btn-lg m-1 text-left">
         <span class="fa fa-plus pr-2"></span>Add New Client</a>
@@ -48,7 +58,11 @@
         <a href="/#landing-3" class="btn btn-dark btn-lg m-1 text-left">
           <span class="fa fa-home pr-2"></span>Home</a> 
 
-    <div class="row">
+          <form class="form-inline input-group form-horizontal pt-3">
+            <input id="myClientInput" class="form-control pt-2 pb-2" type="search" placeholder="Search Client..." aria-label="Search" autocomplete="off">
+          </form>
+
+    <div class="row mt-3">
 
       <div class="col-lg-12">
 
