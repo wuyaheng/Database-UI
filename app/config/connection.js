@@ -2,8 +2,8 @@ var Sequelize = require("sequelize");
 
 // Setting up our connection information
 var sequelize = process.env.JAWSDB_URL
-                ? new Sequelize("j4b8wlcmhefl8ha3", "f9c4oz4nl6no6qhv", "alwdfwp5rxbgs1hw", {
-                  host: "k2fqe1if4c7uowsh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+                ? new Sequelize("q1ag5tsn9d0gjfb1", "uq9c3h79p0iw9v3w", "sgjo9ihijccvgy2v", {
+                  host: "i2cpbxbi4neiupid.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
                   port: 3306,
                   dialect: "mysql",
                   pool: {
