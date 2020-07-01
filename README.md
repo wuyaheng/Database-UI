@@ -12,7 +12,7 @@ A full stack web application that allows users to navigate into different tables
 
 * Contributor
 
-* links
+* link
 
 * Questions
 
