@@ -2,7 +2,7 @@
 ![database](https://user-images.githubusercontent.com/52837649/85235909-facfe500-b3e6-11ea-98a4-0e548c4dace6.gif)
 
 ## Description
-A full stack web application that allows users to navigate into different tables within the company database.
+K&P database menu is a full stack web application that connects the front-end table menu of the K&P Consulting to its MySQL database. K&P database menu has a simple design which allows users to easily navigate into four different tables to add, filter and view all information.
 
 ## Table of Contents
 
