@@ -16,7 +16,7 @@ K&P Database Menu is a full stack web application that connects the front-end ta
 
 
 ## TechUsed
-Sequelize, Express, Node.js, JavaScript, Bootstrap, HTML, CSS
+Sequelize, MySQL, Express, Node.js, JavaScript, Bootstrap, HTML, CSS
 
 ## Link
 https://database-user-interface.herokuapp.com/
