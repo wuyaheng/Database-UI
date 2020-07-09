@@ -1,4 +1,4 @@
-# Company Database UI
+# K&P Database Menu
 ![database](https://user-images.githubusercontent.com/52837649/85235909-facfe500-b3e6-11ea-98a4-0e548c4dace6.gif)
 
 ## Description
@@ -6,31 +6,26 @@ K&P database menu is a full stack web application that connects the front-end ta
 
 ## Table of Contents
 
-* Tech/Framework Used
+* [Tech/Framework Used](#TechUsed)
 
-* Usage
+* [link](#Link)
 
-* Contributor
+* [Usage](#usage) 
 
-* link
-
-* Questions
+* [Questions](#Questions)
 
 
-## Tech/Framework Used
+## TechUsed
 Sequelize, Express, Node.js, JavaScript, Bootstrap, HTML, CSS
 
-## Usage
-Users can add entity and view all entities inside each table.
-
-## Contributor
-Phoebe Yaheng Wu
-
-
-## Link to project URL
+## Link
 https://database-user-interface.herokuapp.com/
 
+## Usage
+Users can add new entity and view all entities inside each table.
 
 ## Questions
+![user profile image](https://avatars0.githubusercontent.com/u/52837649?v=4)
 
-For questions about the project contact PhoebeYahengWu or directly at wuyaheng2016@gmail.com
+For questions about the project contact PhoebeYahengWu or directly at wuyaheng2016@gmail.com.
+
